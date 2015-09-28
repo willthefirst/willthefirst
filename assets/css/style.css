@@ -1,0 +1,201 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  font-family: 'Inconsolata', Helvetica, sans-serif; }
+
+h1 {
+  font-size: 37.89749px;
+  line-height: 56.84623px;
+  margin-bottom: 12px; }
+
+h2 {
+  font-size: 28.43022px;
+  line-height: 42.64534px;
+  margin-bottom: 12px; }
+
+h3 {
+  font-size: 21.328px;
+  line-height: 31.992px;
+  margin-bottom: 12px; }
+
+p {
+  margin-bottom: 12px; }
+
+a {
+  color: #009A36; }
+  a:visited {
+    color: #009A36; }
+
+ol {
+  list-style-type: decimal;
+  padding-left: 28px;
+  margin-left: 16px;
+  margin-bottom: 12px; }
+
+ul {
+  list-style-type: circle;
+  padding-left: 28px;
+  margin-left: 16px;
+  margin-bottom: 12px; }
+
+pre {
+  margin-bottom: 12px; }
+
+blockquote {
+  padding-left: 24px; }
+  blockquote:before {
+    content: '"'; }
+  blockquote:after {
+    content: '"'; }
+  blockquote p {
+    display: inline-block; }
+
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media only screen and (min-width: 700px) {
+    .container {
+      margin-top: 100px; } }
+
+.box {
+  padding: 0 20px; }
+
+.navigation {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%;
+  text-align: center; }
+  .navigation:last-child {
+    margin-right: 0; }
+  @media only screen and (min-width: 700px) {
+    .navigation {
+      text-align: right;
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 14.89362%; }
+      .navigation:last-child {
+        margin-right: 0; } }
+
+.content {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%; }
+  .content:last-child {
+    margin-right: 0; }
+  @media only screen and (min-width: 700px) {
+    .content {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 48.93617%; }
+      .content:last-child {
+        margin-right: 0; } }
+
+.nav-small {
+  margin-bottom: 12px; }
+  @media only screen and (min-width: 700px) {
+    .nav-small {
+      display: none; } }
+
+.nav-big {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  display: none; }
+  @media only screen and (min-width: 700px) {
+    .nav-big {
+      display: block; } }
+  .nav-big li {
+    padding: 10px 0; }
+
+.post {
+  margin-bottom: 12px; }
+
+.post-title {
+  margin-bottom: 0; }
+
+.post-header {
+  margin-bottom: 12px; }
+
+.post-meta {
+  color: #5d5d5d;
+  font-style: italic; }
+
+.site-header {
+  display: block; }
+  .site-header::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.site-logo {
+  display: block;
+  margin-bottom: 12px; }
+
+.site-logo-img {
+  width: 100px;
+  height: 100px; }
+
+@media only screen and (min-width: 700px) {
+  .site-name {
+    position: absolute;
+    top: 0;
+    left: 20px; } }
+
+/*# sourceMappingURL=style.css.map */
