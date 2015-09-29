@@ -6,4 +6,4 @@ Create a post with the tag 'homepage' and it will appear on the home page. Don't
 
 ## Post "cards"
 
-For your different post categories (ie. tags), choose if you want the loop to show up as a gallery of 'cards' or as just the post itself, and stick to that choice for each category, because mixing cards and text won't look great.
+Posts display as cards. Click on card to view the post. You'll have to add an image for each post so that it shows up pretty in the loop.

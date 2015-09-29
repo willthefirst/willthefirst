@@ -3,7 +3,7 @@
 $bp-med: 700px;
 $base-font: 16px;
 $line-height-ratio: 1.5;
-$margin-bottom: .5*($line-height-ratio*modular-scale(0, $base-font));
+$margin-bottom: .8*($line-height-ratio*modular-scale(0, $base-font));
 
 
 // GLOBAL
@@ -129,8 +129,13 @@ blockquote {
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
      1px 1px 0 #fff;
-  font-size: modular-scale(1, $base-font);
-  line-height: $line-height-ratio*(modular-scale(1, $base-font));
+   font-size: modular-scale(0, $base-font);
+   line-height: $line-height-ratio*(modular-scale(0, $base-font));
+   @include bp($bp-med) {
+     font-size: modular-scale(1, $base-font);
+     line-height: $line-height-ratio*(modular-scale(1, $base-font));
+   }
+
 }
 
 .nav-small {
