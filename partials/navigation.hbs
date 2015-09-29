@@ -1,10 +1,14 @@
 <select type="select" class="nav-small">
   {{#foreach navigation}}
-    <option value="{{slug}}">{{label}}</option>
+    <option value="{{url}}"{{#if current}}selected="selected"{{/if}}>{{label}}</option>
   {{/foreach}}
 </select>
 <ul class="nav-big">
     {{#foreach navigation}}
-    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+    {{#if current}}
+    <li class="nav-{{slug}} nav-current" role="presentation">{{label}}</li>
+    {{else}}
+    <li class="nav-{{slug}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+    {{/if}}
     {{/foreach}}
 </ul>

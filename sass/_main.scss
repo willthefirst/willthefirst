@@ -158,8 +158,12 @@ img {
   }
 
   li {
-    padding: 10px 0;
+    padding: 10px 20px;
   }
+}
+
+.nav-current {
+  border-right: 1px solid $color-fade;
 }
 
 // POST
