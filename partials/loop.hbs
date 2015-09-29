@@ -1,5 +1,14 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
+
+{{!-- If post has a post iamge, show as a card --}}
+{{#if image}}
+
+<a class="card-img" href="{{url}}" style="background-image: url({{image}})">{{title}}</a>
+
+{{!-- If post does not have a post-image, display thre full post --}}
+{{else}}
+
 <article class="{{post_class}}">
     <header class="post-header">
         <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
@@ -7,8 +16,11 @@
           <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
         </span>
     </header>
-    <section class="post-excerpt">
+    <section class="post-content">
         {{content}}
     </section>
 </article>
+
+{{/if}}
+
 {{/foreach}}
