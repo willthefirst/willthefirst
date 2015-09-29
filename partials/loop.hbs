@@ -4,7 +4,11 @@
 {{!-- If post has a post iamge, show as a card --}}
 {{!-- {{#if image}} --}}
 
-<a class="card-img" href="{{url}}" style="background-image: url({{image}})">{{title}}</a>
+<figure class="card">
+  <a href="{{url}}" class="card-img" style="background-image: url({{image}})">
+  <figcaption class="card-title">{{title}}</figcaption>
+  </a>
+</figure>
 
 {{!-- If post does not have a post-image, display thre full post --}}
 {{!-- {{else}}
