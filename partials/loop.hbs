@@ -2,12 +2,12 @@
 {{#foreach posts}}
 
 {{!-- If post has a post iamge, show as a card --}}
-{{#if image}}
+{{!-- {{#if image}} --}}
 
 <a class="card-img" href="{{url}}" style="background-image: url({{image}})">{{title}}</a>
 
 {{!-- If post does not have a post-image, display thre full post --}}
-{{else}}
+{{!-- {{else}}
 
 <article class="{{post_class}}">
     <header class="post-header">
@@ -21,6 +21,6 @@
     </section>
 </article>
 
-{{/if}}
+{{/if}} --}}
 
 {{/foreach}}
