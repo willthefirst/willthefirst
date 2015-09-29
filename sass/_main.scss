@@ -33,7 +33,7 @@ h3 {
   margin-bottom: $margin-bottom;
 }
 
-p {
+p, iframe, image {
   margin-bottom: $margin-bottom;
 }
 
@@ -74,6 +74,10 @@ blockquote {
   p {
     display: inline-block;
   }
+}
+
+img {
+  max-width: 100%;
 }
 
 // STRUCTURAL
@@ -139,7 +143,7 @@ blockquote {
 }
 
 .nav-small {
-  margin-bottom: $margin-bottom;
+  margin-bottom: 2*$margin-bottom;
   @include bp($bp-med) {
     display: none;
   }

@@ -64,7 +64,7 @@ h3 {
   line-height: 31.992px;
   margin-bottom: 19.2px; }
 
-p {
+p, iframe, image {
   margin-bottom: 19.2px; }
 
 a {
@@ -95,6 +95,9 @@ blockquote {
     content: '"'; }
   blockquote p {
     display: inline-block; }
+
+img {
+  max-width: 100%; }
 
 .container {
   max-width: 1400px;
@@ -171,7 +174,7 @@ blockquote {
       line-height: 31.992px; } }
 
 .nav-small {
-  margin-bottom: 19.2px; }
+  margin-bottom: 38.4px; }
   @media only screen and (min-width: 700px) {
     .nav-small {
       display: none; } }
