@@ -44,6 +44,7 @@ table {
   border-spacing: 0; }
 
 body {
+  color: #000;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 19.2px;
@@ -88,13 +89,9 @@ pre {
   margin-bottom: 19.2px; }
 
 blockquote {
-  padding-left: 24px; }
-  blockquote:before {
-    content: '"'; }
-  blockquote:after {
-    content: '"'; }
-  blockquote p {
-    display: inline-block; }
+  padding-left: 24px;
+  border-left: 1px solid rgba(0, 154, 54, 0.15);
+  color: rgba(0, 0, 0, 0.59); }
 
 img {
   max-width: 100%; }

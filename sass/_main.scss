@@ -5,10 +5,15 @@ $base-font: 16px;
 $line-height-ratio: 1.5;
 $margin-bottom: .8*($line-height-ratio*modular-scale(0, $base-font));
 
+$color-main: #009A36;
+$color-fade: rgba(0, 154, 54, 0.15);
+$color-font-main: #000;
+$color-font-fade: rgba(0, 0, 0, 0.59);;
 
 // GLOBAL
 
 body {
+  color: $color-font-main;
   font-size: modular-scale(0, $base-font);
   line-height: $line-height-ratio*(modular-scale(0, $base-font));
   margin-bottom: $margin-bottom;
@@ -38,10 +43,10 @@ p, iframe, image {
 }
 
 a {
-  color: #009A36;
+  color: $color-main;
 
   &:visited{
-    color: #009A36;
+    color: $color-main;
   }
 }
 
@@ -65,15 +70,8 @@ pre {
 
 blockquote {
   padding-left: 24px;
-  &:before {
-    content: '"';
-  }
-  &:after {
-    content: '"'
-  }
-  p {
-    display: inline-block;
-  }
+  border-left: 1px solid $color-fade;
+  color: rgba(0, 0, 0, 0.59);
 }
 
 img {
