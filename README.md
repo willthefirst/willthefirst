@@ -17,3 +17,12 @@ Create a post with the tag 'homepage' and it will appear on the home page. Don't
 ## Post "cards"
 
 Posts display as cards. Click on card to view the post. You'll have to add an image for each post so that it shows up pretty in the loop. Images should be at least 400 x 400px.
+
+## Digital Ocean Stuff
+
+To update theme:
+
+$ ssh root@willthefirst.com and enter password.
+$ cd /var/www/ghost/content/themes/willthefirst
+$ git pull
+& service ghost restart
