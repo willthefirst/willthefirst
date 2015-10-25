@@ -150,17 +150,21 @@ img {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-content: space-between; }
+  align-content: space-between;
+  margin-bottom: 38.4px; }
 
 .card {
-  flex: 0 0 49%;
-  margin-bottom: 19.2px; }
+  flex: 0 0 47%;
+  margin-bottom: 38.4px; }
 
 .card-img {
   display: block;
   background-image: url("http://placehold.it/400x400");
   background-position: center;
   height: 200px; }
+  @media only screen and (min-width: 700px) {
+    .card-img {
+      height: 300px; } }
 
 .card-title {
   display: inline-block;
@@ -229,5 +233,8 @@ img {
     position: absolute;
     top: 0;
     left: 20px; } }
+
+.pagination {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

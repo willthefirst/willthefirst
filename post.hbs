@@ -19,6 +19,11 @@
             {{content}}
         </section>
     </article>
+    <div class="pagination">
+      {{#prev_post}}
+      <h3>Next post: <a class="read-previous-story" href="{{url}}">{{title}} ></a></h3>
+      {{/prev_post}}
+    </div>
   </div>
 </div>
 {{/post}}
